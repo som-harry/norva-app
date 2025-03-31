@@ -1,0 +1,56 @@
+<div class="flex px-4  w-screen h-screen justify-around items-center">
+    <div>
+        <p class="text-[#1C1C1C] pb-4 font-normal md:text-xl text-sm leading-[100%] ">
+            Empowering your brand for the future
+        </p>
+       
+        <strong class="text-[#1C1C1C] font-normal md:text-[6.5rem]/[6.63rem] text-lg font-[AeonikTRIAL-Bold] pb-2">
+            Norva <br/>
+            <span class="text-[#098EF3]">
+                Creative
+            </span>
+        </strong>
+        <p class="text-[#1C1C1C] py-8 font-normal md:text-[1.4rem] text-sm leading-[100%] text-ellipsis  ">
+            From brand strategy to digital presence, we craft <br /> compelling  identities that drive success.
+        </p>
+        <button class="bg-[#098EF3] w-[5rem] h-[5rem] hover:bg-[#285ACA] p-3 rounded-lg transition-all duration-300 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="w-8 h-8 text-center transition-transform duration-300 hover:scale-60"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+        </button>          
+    </div>
+
+    <div class="relative hidden md:flex items-center justify-center">
+        <!-- Background Pattern (Bigger & Positioned Outward) -->
+         <div class=" w-[480px] h-[600px] absolute -z-10 ">
+            <img
+            [src]="patternImage"
+            class="object-cover  "
+            alt="Pattern"
+          />
+         </div>
+      
+        <div class=" relative  w-[330px] h-[460px] mt-[-5rem]">
+            <img
+            [src]="personImage"
+            class="  object-cover transition-transform duration-700 ease-out"
+            [ngClass]="{'translate-x-0': isVisible, 'translate-x-full': !isVisible}"
+            alt="Person"
+          />
+        </div>
+        <!-- Foreground Image (Centered) -->
+       
+    </div>
+</div>
+
