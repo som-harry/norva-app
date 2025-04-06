@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VerticalLine } from '../models/norva.constant';
+import { BackgroundServiceIcon, VerticalLine } from '../models/norva.constant';
 
 @Component({
   selector: 'app-service',
@@ -9,4 +9,5 @@ import { VerticalLine } from '../models/norva.constant';
 })
 export class ServiceComponent {
   verticalLine = VerticalLine;
+  backgroundServiceIcon = BackgroundServiceIcon;
 }
